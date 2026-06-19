@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../image/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    font-family:
+    "Segoe UI",
+    sans-serif;
+}
+
+.container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+}
+
+.card{
+
+    width:100%;
+    max-width:700px;
+
+    border:none;
+    border-radius:35px;
+
+    background:
+    rgba(255,255,255,0.96);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.30);
+}
+
+.card-body{
+
+    padding:50px;
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.logo i{
+
+    font-size:70px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0d6efd,
+        #0047ff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+h1{
+
+    text-align:center;
+
+    color:#082a5e;
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.text-muted{
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin-bottom:35px !important;
+}
+
+.form-control,
+.form-select{
+
+    height:65px;
+
+    border-radius:15px;
+
+    border:1px solid #d6dce5;
+
+    font-size:18px;
+
+    box-shadow:none;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:
+    0 0 0 0.15rem rgba(13,110,253,.15);
+}
+
+.btn-primary{
+
+    width:100%;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    background:
+    linear-gradient(
+        90deg,
+        #0d6efd,
+        #0048ff
+    );
+}
+
+.btn-primary:hover{
+
+    opacity:.95;
+}
+
+.result-card{
+
+    display:none;
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+.approved{
+
+    background:#eefcf1;
+    border:2px solid #28a745;
+}
+
+.pending{
+
+    background:#fff8e8;
+    border:2px solid #ffc107;
+}
+
+.rejected{
+
+    background:#fff0f0;
+    border:2px solid #dc3545;
+}
+
+.status-icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:auto;
+    margin-bottom:15px;
+
+    color:#fff;
+
+    font-size:30px;
+    font-weight:bold;
+}
+
+.approved .status-icon{
+
+    background:#28a745;
+}
+
+.pending .status-icon{
+
+    background:#ffc107;
+}
+
+.rejected .status-icon{
+
+    background:#dc3545;
+}
+
+.result-card h3{
+
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.info{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:15px;
+
+    text-align:left;
+}
+
+.info div{
+
+    background:#fff;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    box-shadow:
+    0 2px 8px rgba(0,0,0,.05);
+}
+
+@media(max-width:768px){
+
+    body{
+
+        padding:15px;
+    }
+
+    .card{
+
+        border-radius:25px;
+    }
+
+    .card-body{
+
+        padding:30px;
+    }
+
+    .logo i{
+
+        font-size:55px;
+    }
+
+    h1{
+
+        font-size:36px;
+    }
+
+    .text-muted{
+
+        font-size:16px;
+    }
+
+    .form-control,
+    .form-select,
+    .btn-primary{
+
+        height:58px;
+
+        font-size:16px;
+    }
+
+    .info{
+
+        grid-template-columns:1fr;
+    }
+}
